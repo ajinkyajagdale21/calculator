@@ -3,17 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-.heading {
-  padding: 1rem;
-  margin: 1rem;
+body {
   display: flex;
-}
-.btn {
-  padding: 1rem;
-  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
 }
 .enter {
-  margin: 3rem;
+  border: 1px solid black;
   padding: 1rem;
-  width: 70%;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 2rem;
 }

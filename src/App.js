@@ -1,5 +1,7 @@
 import React from 'react';
 import "./styles/app.scss"
+import OutputDiv from "./outputdiv";
+import Buttons from "./buttons";
 
 function App() {
   return (
@@ -7,39 +9,11 @@ function App() {
       
       
       <h1>calculator</h1>
-      <input className="enter" placeholder="enter number"></input>
+
+      <OutputDiv/>
+      <Buttons/>
       
-
-      <br/>
-      <div className="btn">
-      <button>AC</button>
-      <button>/</button>
-      <br/>
-      <button>9</button>
-      <button>8</button>
-      <button>7</button>
-      <button>*</button>
-
-      <br/>
-      
-      <button>6</button>
-      <button>5</button>
-      <button>4</button>
-      <button>-</button>
-      <br/>  
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
-
-      <br/>
-      <button>0</button>
-      <button>.</button>
-      <button>=</button>
-      </div>
-
     </div>
-    
   );
 }
 
