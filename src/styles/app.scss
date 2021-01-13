@@ -9,14 +9,13 @@ body {
   justify-content: center;
   text-align: center;
   min-height: 70vh;
-}
-.enter {
-  border: 1px solid black;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 0.25rem;
+  background-color: #1d1d1d;
+  color: white;
+  min-height: 100vh;
 }
 h1 {
-  margin: 0;
-  margin-bottom: 2rem;
+  margin: 1.5rem;
 }
+
+@import "./outputdiv.scss";
+@import "./buttons.scss";

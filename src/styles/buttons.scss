@@ -1,0 +1,24 @@
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: #3f3f3f;
+  color: #e3e3e3;
+  border-radius: 0.5rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "total total total total"
+    "modif modif modif oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper";
+  grid-auto-columns: 1fr;
+}
+#btn-equals {
+  background-color: #458500;
+  border-color: #458500;
+  border-radius: 0.25rem;
+}

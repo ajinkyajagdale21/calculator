@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./styles/app.scss"
 import OutputDiv from "./outputdiv";
 import Buttons from "./buttons";
 
 function App() {
+ 
+  const [data,setData]=useState("");
+  const [outputs,setOutputs]=useState("");
+ 
   return (
     <div className="App">
       
-      
-      <h1>calculator</h1>
+      <hr/>
+      <h1>Calculator</h1>
 
-      <OutputDiv/>
-      <Buttons/>
+      <OutputDiv data={data} outputs={outputs}  />
+      <Buttons data={data} setData={setData} outputs={outputs} setOutputs={setOutputs} />
       
     </div>
   );
