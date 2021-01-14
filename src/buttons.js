@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 
@@ -8,8 +9,9 @@ function Buttons({data,setData,setOutputs}) {
        } 
   
   const OutputHandler=()=>{
-   
-    setOutputs((eval(data)));
+   // setOutputs((eval(data)));
+     // eslint-disable-next-line
+     setOutputs(Function(' "use strict" ; return (' + data + ')')());
     setData('');   
   }  
   const clearEventHandler=(e)=>{
